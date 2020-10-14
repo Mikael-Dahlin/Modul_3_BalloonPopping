@@ -1,0 +1,49 @@
+body {
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+}
+
+.balloons-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+}
+
+.balloons {
+  display: grid;
+  place-items: center;
+  background: red;
+  color: red;
+  font-size: 20px;
+  border-radius: 50%;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  border: 0px;
+}
+
+.congrats {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  max-width: 600px;
+}
+
+.wrapper h1 {
+  color: lightslategray;
+  text-transform: uppercase;
+}
+
+.balloons-gallery div:nth-child(3n) {
+  background: #ffce00;
+  color: #ffce00;
+}
+
+.balloons-gallery div:nth-child(3n-1) {
+  background: lightskyblue;
+  color: lightskyblue;
+}
